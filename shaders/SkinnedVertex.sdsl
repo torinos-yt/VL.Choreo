@@ -1,0 +1,11 @@
+shader SkinnedVertex
+{
+    struct SkinnedVertexStruct
+    {
+        float3 Position;
+        float3 Normal;
+        float2 TexCoord;
+        uint4 BlendIndices;
+        float4 BlendWeights;
+    };
+};

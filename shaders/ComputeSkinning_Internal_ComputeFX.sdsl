@@ -1,0 +1,34 @@
+shader ComputeSkinning_Internal_ComputeFX : ComputeShaderBase, SkinnedVertex, BufferUtils
+{
+    rgroup PerDispatch
+    {
+        stage RWStructuredBuffer<SkinnedVertexStruct> Vertices;
+        stage StructuredBuffer<SkinnedVertexStruct> RestVertices;
+        stage StructuredBuffer<float4x4Struct> BlendMatrixArray;
+        stage StructuredBuffer<float4x4Struct> RestPoseArray;
+    };
+
+    cbuffer PerDispatch
+    {
+        stage int cnt;
+    };
+
+    override void Compute()
+    {
+        uint dtid = streams.DispatchThreadId.x;
+        if(dtid >= cnt) return;
+
+        SkinnedVertexStruct vert = RestVertices[dtid];
+        float4x4 skinningBlendMatrix = mul(RestPoseArray[vert.BlendIndices[0]].Matrix, BlendMatrixArray[vert.BlendIndices[0]].Matrix) * vert.BlendWeights[0]
+                                     + mul(RestPoseArray[vert.BlendIndices[1]].Matrix, BlendMatrixArray[vert.BlendIndices[1]].Matrix) * vert.BlendWeights[1]
+                                     + mul(RestPoseArray[vert.BlendIndices[2]].Matrix, BlendMatrixArray[vert.BlendIndices[2]].Matrix) * vert.BlendWeights[2]
+                                     + mul(RestPoseArray[vert.BlendIndices[3]].Matrix, BlendMatrixArray[vert.BlendIndices[3]].Matrix) * vert.BlendWeights[3];
+
+
+        float4 blendPos = mul(float4(vert.Position.xyz, 1.0f), skinningBlendMatrix);
+        vert.Position = blendPos.xyz;
+        vert.Normal = normalize(mul(vert.Normal, skinningBlendMatrix));
+
+        Vertices[dtid] = vert;
+    }
+};
