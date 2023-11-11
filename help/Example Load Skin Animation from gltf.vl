@@ -705,6 +705,8 @@
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
             </p:NodeReference>
             <Pin Id="Nu0zkEOO9QFPS2FFHkr3nn" Name="Condition" Kind="InputPin" />
+            <ControlPoint Id="Jn2FVwzzsd1M8jY5UGkJIJ" Bounds="1123,920" Alignment="Top" />
+            <ControlPoint Id="IcL4r6hWCFmOTxflP6jDg9" Bounds="1118,996" Alignment="Bottom" />
             <Patch Id="I5ulZCIwi2qLeNHTm2gCd4" ManuallySortedPins="true">
               <Patch Id="Rm3OdmDxXX1O8AnEff4i2s" Name="Create" ManuallySortedPins="true" />
               <Patch Id="SH0cARcCIrpLPBjHSsIbVt" Name="Then" ManuallySortedPins="true" />
@@ -719,10 +721,9 @@
                 <Pin Id="BEkur6bR0gSMpYOhw9v3QP" Name="Quaternion" Kind="InputPin" />
                 <Pin Id="Q5jJVOZawLZOD9i4eb1eRP" Name="Scale" Kind="InputPin" />
                 <Pin Id="CGQZQCleNi6LNAY7xeb4U4" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NFoL3jt1aDjQHcAyQrCYLz" Name="Name" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="Jn2FVwzzsd1M8jY5UGkJIJ" Bounds="1123,920" Alignment="Top" />
-            <ControlPoint Id="IcL4r6hWCFmOTxflP6jDg9" Bounds="1118,996" Alignment="Bottom" />
           </Node>
           <Pad Id="FmSyoX5SSUCO7dRfiCIfJu" Comment="Condition" Bounds="1057,883,35,15" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">

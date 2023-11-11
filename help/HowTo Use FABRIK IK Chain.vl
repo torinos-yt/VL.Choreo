@@ -276,7 +276,7 @@
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GbjBMkEmJAWPn3VQh7d7Tt" Comment="Translation" Bounds="1303,546,35,43" ShowValueBox="true" isIOBox="true" Value="0.24, 0.36, -1.57">
+          <Pad Id="GbjBMkEmJAWPn3VQh7d7Tt" Comment="Translation" Bounds="1303,546,35,43" ShowValueBox="true" isIOBox="true" Value="0.24, 0.47, -1.64">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -295,25 +295,17 @@
             <Pin Id="TiA8cCcSZMSNHXi2QH3yhm" Name="Enabled" Kind="InputPin" />
             <Pin Id="SnjCMxAGw1EMwKL8GGyz9r" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="307,292,87,19" Id="N9o3zLTJuwpPTL5qnqm7VH">
-            <p:NodeReference LastCategoryFullName="Choreo" LastDependency="VL.Choreo.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="UpdateSkeleton" />
-            </p:NodeReference>
-            <Pin Id="Q6wSzrnbP2HOTGycET3B49" Name="Input" Kind="InputPin" />
-            <Pin Id="NNyJFfi1BQKO3Z6Sr7G16z" Name="Output" Kind="OutputPin" />
-          </Node>
           <Pad Id="RFOEtp12KFkOCMugCGQ6Rr" Comment="Iteration" Bounds="454,610,37,15" ShowValueBox="true" isIOBox="true" Value="30">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DKOD5nPbHh4OsEmMdFqEVa" Comment="Rotation" Bounds="1223,505,35,43" ShowValueBox="true" isIOBox="true" Value="0.26, 0, 0">
+          <Pad Id="DKOD5nPbHh4OsEmMdFqEVa" Comment="Rotation" Bounds="1223,505,35,43" ShowValueBox="true" isIOBox="true" Value="0.28, 0, 0">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="398,231,77,26" Id="PYWxzJQq83yNKfduPJP4cC">
+          <Node Bounds="358,232,77,26" Id="PYWxzJQq83yNKfduPJP4cC">
             <p:NodeReference LastCategoryFullName="Choreo.Skeleton" LastDependency="VL.Choreo.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetAnimation" />
@@ -323,7 +315,7 @@
             <Pin Id="NG9OJWCa9OmNflWduP95AR" Name="Time" Kind="InputPin" />
             <Pin Id="BgIjk9sapkeNrL0Jn8oCwh" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="Mz5w0lVl7cOLDAzm7OYXSM" Comment="Time" Bounds="477,211,35,15" ShowValueBox="true" isIOBox="true" Value="2.37">
+          <Pad Id="Mz5w0lVl7cOLDAzm7OYXSM" Comment="Time" Bounds="477,211,35,15" ShowValueBox="true" isIOBox="true" Value="2.12">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -587,7 +579,7 @@
             <Pin Id="OqZ0usucr4FP5ioKiiJIJg" Name="Input 2" Kind="InputPin" />
             <Pin Id="QRSmnXodOCjO4xnLZxevPa" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="MTDKUN46tW0O54HdHxXMbs" Comment="Adjust" Bounds="757,491,35,43" ShowValueBox="true" isIOBox="true" Value="0.05, 0, 0">
+          <Pad Id="MTDKUN46tW0O54HdHxXMbs" Comment="Adjust" Bounds="757,491,35,43" ShowValueBox="true" isIOBox="true" Value="0.02, 0, 0">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -628,6 +620,41 @@
           <Overlay Id="BtK9AHokoCpN7k05CuUEzh" Name="IK Target" Bounds="1122,403,350,342">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
+          <Node Bounds="334,283,87,19" Id="SZhqT1Bc2MyNt3GZhNzYpP">
+            <p:NodeReference LastCategoryFullName="Choreo" LastDependency="VL.Choreo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="UpdateSkeleton" />
+            </p:NodeReference>
+            <Pin Id="AgjHUuOH21xPURVB7jTdCt" Name="Input" Kind="InputPin" />
+            <Pin Id="RfpiKmboGpTNlDe0mrFJK6" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PzOWn7CaLzNOjJ584gJWmG" Bounds="298,-70,331,72" ShowValueBox="true" isIOBox="true" Value="CMU Graphics Lab Motion Capture Database">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OA8hrAV0qfoLh83Ob7EJjm" Bounds="299,-112,155,25" ShowValueBox="true" isIOBox="true" Value="Motion :">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GjfLQJGtkeYMe6KbD8ARAm" Bounds="298,9,327,26" ShowValueBox="true" isIOBox="true" Value="http://mocap.cs.cmu.edu/">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="IURt6AnH62WMiOFKlZsj0B" Name="Create" />
         <Patch Id="TBfz6eDMrOiN2DP2ctXYM9" Name="Update" />
@@ -655,10 +682,8 @@
         <Link Id="Nv2GKqTfo6pOfwUalk3yrm" Ids="UhlFqn0qyrMNTjx9jl1Yz8,UXIvSDsuMArLiwftBIwi2O" />
         <Link Id="D7lKPD9bIwxMTOa4fjIn6W" Ids="SnjCMxAGw1EMwKL8GGyz9r,SpSKL5UoadzP8MkQo3Fd85" />
         <Link Id="TT5zZpAygwYQB2sWime4yN" Ids="RFOEtp12KFkOCMugCGQ6Rr,SYgZRquRY17PQP7xp0Oq8i" />
-        <Link Id="AR9MGYG8AFROmzAqskKfTT" Ids="NNyJFfi1BQKO3Z6Sr7G16z,MCceN4hCH5YPBUlOUbV4z7" />
         <Link Id="F2MC5o6ovQNOt4rHYc9wbU" Ids="DKOD5nPbHh4OsEmMdFqEVa,EeqpmB6RqPKMTwW4s9etxa" />
         <Link Id="HvNpDzmAS0iQHfxo2vISeT" Ids="GyIDqgIfSOaNeL3Wdkaldj,AZrq9Zgtro5P1LT3md08U4" />
-        <Link Id="K52FasGVlatLVy7K7t8UZZ" Ids="BgIjk9sapkeNrL0Jn8oCwh,Q6wSzrnbP2HOTGycET3B49" />
         <Link Id="KWPxm3Dn1FnLafRPLehb9v" Ids="Mz5w0lVl7cOLDAzm7OYXSM,NG9OJWCa9OmNflWduP95AR" />
         <Link Id="EVO9IGSUuBPLaqSMwkjmqS" Ids="JMCW3zTFbGHOKG6btZXN1s,QJJzJKyTrCWNhdhjubfwbx" />
         <Link Id="PWSa43VzuoNMZEMowY80nm" Ids="LQATkvsRrsVP4GHLJ9aPD2,MSzfnFYMHzSL4oIcSry6CB" />
@@ -716,6 +741,8 @@
         <Link Id="FXIFIYJyiydL7WunmcpBG4" Ids="RN2zMD7pDLHNPb1w0GRN6e,C6DowtJ1BlEPF0pRtTmpyG" />
         <Link Id="D2yoP9H3AWfOPXvaCRoS8v" Ids="ONMJ5U72zNdQKFuhAcceUv,B9EJ8pXrOrqQT0rI8aXrN6" />
         <Link Id="H80qkNmbwbQN8A6tjEgunD" Ids="Gc2yq95y1jTPwH3w4qbIFK,J9XUkGHnfV3OZOnxocJ5ft" />
+        <Link Id="Kj6nHEir6s2N5R3ZePaAvI" Ids="BgIjk9sapkeNrL0Jn8oCwh,AgjHUuOH21xPURVB7jTdCt" />
+        <Link Id="T19iQ9onJzfOpHavnHpvIi" Ids="RfpiKmboGpTNlDe0mrFJK6,MCceN4hCH5YPBUlOUbV4z7" />
       </Patch>
     </Node>
   </Patch>
