@@ -21,12 +21,12 @@
               <Choice Kind="ProcessAppFlag" Name="FileCharacter" />
             </p:NodeReference>
             <Pin Id="A0LjekJ9J94QVDx0nmndA2" Name="Path" Kind="InputPin" />
-            <Pin Id="GdcU50Y5KCoPc9T9f9JHDT" Name="Reload" Kind="InputPin" />
+            <Pin Id="GdcU50Y5KCoPc9T9f9JHDT" Name="Reload" Kind="InputPin" DefaultValue="False" />
             <Pin Id="SjiwnFX2dD4NAWOPGYMaY1" Name="SkinnedMeshes" Kind="OutputPin" />
             <Pin Id="Eh5sZhDtREqQMb2GAti5dL" Name="Skeleton" Kind="OutputPin" />
             <Pin Id="DlfuiVVIxjdNRByykHF0uc" Name="Animation Durations" Kind="OutputPin" />
           </Node>
-          <Pad Id="OoeaDmaBdA8NAmITxlKAmM" Comment="Path" Bounds="409,1238,140,15" ShowValueBox="true" isIOBox="true" Value="assets\Wong.glb">
+          <Pad Id="OoeaDmaBdA8NAmITxlKAmM" Comment="Path" Bounds="409,1238,140,15" ShowValueBox="true" isIOBox="true" Value="assets\Wong_merged.glb">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -285,7 +285,7 @@
             <Pin Id="HSCyCfYSa7INeF57He20dN" Name="Input 2" Kind="InputPin" />
             <Pin Id="EncXUk7IgeWORIgAntgmJN" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="GjOD8uGOCz0N6Sstt9FtgS" Comment="Instance Count" Bounds="980,356,78,31" ShowValueBox="true" isIOBox="true" Value="128">
+          <Pad Id="GjOD8uGOCz0N6Sstt9FtgS" Comment="Instance Count" Bounds="980,356,78,31" ShowValueBox="true" isIOBox="true" Value="64">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -527,7 +527,7 @@
             <Pin Id="GWZ0ycHIrF0LqNkApLWUtf" Name="Apply" Kind="InputPin" />
             <Pin Id="L9XI1hT2vMFLVjJwDfglgl" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1165,508,57,19" Id="Hq1waAWjm1MPcjVmdyN2Si">
+          <Node Bounds="1171,500,57,19" Id="Hq1waAWjm1MPcjVmdyN2Si">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -562,7 +562,7 @@
           </Node>
           <Pad Id="QHPVg7YpdGNP51Ez5cgjwU" SlotId="DDXOYzxviOmQJNwE226Ulr" Bounds="1190,729" />
           <Pad Id="F793z26y9DQNqZFhnViaTs" SlotId="DDXOYzxviOmQJNwE226Ulr" Bounds="1212,580" />
-          <Node Bounds="1157,544,54,19" Id="DmvzAKqFjYuOG37jb4eHNJ">
+          <Node Bounds="1170,541,54,19" Id="DmvzAKqFjYuOG37jb4eHNJ">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
@@ -641,7 +641,7 @@
             <Pin Id="VjDTz0aIJMYLWIR11w8UAC" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="TjOCcC3bWbOPok4GDznoic" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Pad Id="NxKHNWNBBSaPYfb95gqzjN" Comment="Period" Bounds="1052,634,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
+          <Pad Id="NxKHNWNBBSaPYfb95gqzjN" Comment="Period" Bounds="1052,634,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
