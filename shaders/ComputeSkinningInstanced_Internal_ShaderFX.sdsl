@@ -1,0 +1,40 @@
+shader ComputeSkinningInstanced_Internal_ShaderFX : MaterialExtension, BufferUtils
+{
+    stage stream uint4 BlendIndices : BLENDINDICES;
+    stage stream float4 BlendWeights : BLENDWEIGHT;
+
+    rgroup PerMaterial
+    {
+        stage StructuredBuffer<float4x4Struct> BlendMatrixArray;
+    };
+
+    cbuffer PerMaterial
+    {
+        stage int boneCount;
+    };
+
+    stage override void GenerateNormal_VS()
+    {
+        // do nothing
+    }
+
+    stage override void TransformPosition()
+    {
+        base.TransformPosition();
+
+        uint4 indices = streams.BlendIndices;
+        float4 weights = streams.BlendWeights;
+
+        uint offset = boneCount * streams.InstanceID;
+
+        float4x4 skinningBlendMatrix = BlendMatrixArray[indices[0] + offset].Matrix * weights[0]
+                                     + BlendMatrixArray[indices[1] + offset].Matrix * weights[1]
+                                     + BlendMatrixArray[indices[2] + offset].Matrix * weights[2]
+                                     + BlendMatrixArray[indices[3] + offset].Matrix * weights[3];
+
+        streams.PositionWS = mul(mul(streams.Position, skinningBlendMatrix), World);
+        streams.ShadingPosition = mul(streams.PositionWS, ViewProjection);
+
+        streams.normalWS = mul(mul(streams.meshNormal, skinningBlendMatrix), (float3x3)WorldInverseTranspose);
+    }
+};

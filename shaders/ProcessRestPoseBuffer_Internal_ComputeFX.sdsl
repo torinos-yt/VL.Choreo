@@ -1,0 +1,28 @@
+shader ProcessRestPoseBuffer_Internal_ComputeFX : ComputeShaderBase, BufferUtils
+{
+    rgroup PerDispatch
+    {
+        stage RWStructuredBuffer<float4x4Struct> OutMatrixArray;
+
+        stage StructuredBuffer<float4x4Struct> BlendMatrixArray;
+        stage StructuredBuffer<float4x4Struct> RestPoseArray;
+    };
+
+    cbuffer PerDispatch
+    {
+        stage int cnt;
+        stage int boneCount;
+    };
+
+    override void Compute()
+    {
+        uint dtid = streams.DispatchThreadId.x;
+        if(dtid >= cnt) return;
+
+        OutMatrixArray[dtid].Matrix = 
+            mul(
+                RestPoseArray[dtid % boneCount].Matrix,
+                BlendMatrixArray[dtid].Matrix
+            );
+    }
+};

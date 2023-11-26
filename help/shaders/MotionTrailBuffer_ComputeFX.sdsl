@@ -1,0 +1,34 @@
+shader MotionTrailBuffer_ComputeFX : ComputeShaderBase, BufferUtils
+{
+    rgroup PerDispatch
+    {
+        stage RWStructuredBuffer<float4x4Struct> OutputBuffer;
+        stage StructuredBuffer<float4x4Struct> BlendMatrixArray;
+    };
+
+    cbuffer PerDispatch
+    {
+        stage int cnt;
+        stage int boneCount;
+        stage int index;
+        stage int write;
+    };
+
+    override void Compute()
+    {
+        uint dtid = streams.DispatchThreadId.x;
+        if(dtid >= cnt) return;
+
+        uint skeletonIndex = dtid / boneCount;
+        uint boneIndex = dtid % boneCount;
+
+        if(skeletonIndex == 0)
+        {
+            OutputBuffer[dtid] = BlendMatrixArray[boneIndex];
+        }
+        else if(write == 1 && skeletonIndex == index+1)
+        {
+            OutputBuffer[dtid] = BlendMatrixArray[boneIndex];
+        }
+    }
+};
