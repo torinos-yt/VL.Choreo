@@ -11,6 +11,7 @@ shader MotionTrailBuffer_ComputeFX : ComputeShaderBase, BufferUtils
         stage int cnt;
         stage int boneCount;
         stage int index;
+        stage int instanceCount;
         stage int write;
     };
 
@@ -22,11 +23,11 @@ shader MotionTrailBuffer_ComputeFX : ComputeShaderBase, BufferUtils
         uint skeletonIndex = dtid / boneCount;
         uint boneIndex = dtid % boneCount;
 
-        if(skeletonIndex == 0)
+        if(skeletonIndex == instanceCount-1)
         {
             OutputBuffer[dtid] = BlendMatrixArray[boneIndex];
         }
-        else if(write == 1 && skeletonIndex == index+1)
+        else if(write == 1 && skeletonIndex == index)
         {
             OutputBuffer[dtid] = BlendMatrixArray[boneIndex];
         }
