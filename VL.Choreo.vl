@@ -1696,6 +1696,15 @@
                   <Pin Id="KDr7vF56anMPUTE7nnvKUU" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Bq7wk9ew4GyOomwLIluxZU" Name="Result" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="505,275,110,19" Id="PfUX7xZkIz3N2EFtbkJGQm">
+                  <p:NodeReference LastCategoryFullName="SharpGLTF.Schema2.ReadSettings" LastDependency="SharpGLTF.Core.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ReadSettings" />
+                    <Choice Kind="OperationCallFlag" Name="FromValidationMode" />
+                  </p:NodeReference>
+                  <Pin Id="Ritg3zRwFRlLBCyzHb1ouP" Name="Input" Kind="InputPin" DefaultValue="TryFix" />
+                  <Pin Id="J7X3AeDDJ64OcQ2Xmcufxd" Name="Result" Kind="OutputPin" />
+                </Node>
               </Patch>
             </Node>
             <ControlPoint Id="FWbGCKJwuuZOyFZwVgMgH9" Bounds="161,191" />
@@ -3339,6 +3348,7 @@
           <Link Id="MXhBhAeGlRnNfYTeOV9aMM" Ids="FbrDBaKaqBPNuK5Wia8Fi7,APHDn2ygqYqMlkFlZ0ntPs" />
           <Link Id="JRFInf1MBamN29VarfJpJi" Ids="IujeOFLbYAoOhDkGDKPQdz,InXkOLqkPi3Pbmx2wWVckd" />
           <Link Id="U6PKYkch2qGQRPsAvFgZLY" Ids="Nor0wJWwV2jLJEphvjrQw0,D4TCaPEvyEkPKMmG8wFgMV" />
+          <Link Id="ITCmmoHzV0FPEBBEEhLYgO" Ids="J7X3AeDDJ64OcQ2Xmcufxd,F6KiljpB0MmOZTlxOvVdhA" />
         </Patch>
       </Node>
       <!--
@@ -8134,7 +8144,7 @@
                       <Pin Id="MyaKPhGlmDWNTIeKk2o1Tb" Name="Blend Matrix Array" Kind="InputPin" />
                       <Pin Id="Ru72aEt4VDsPqkNULqD6r0" Name="Rest Pose Array" Kind="InputPin" />
                       <Pin Id="R2peC2hiKR7O6miBnCLHxx" Name="Vertices" Kind="InputPin" />
-                      <Pin Id="TfQ3cAOd2pNOGajFZ5k2mL" Name="Thread Group Count Global" Kind="InputPin" />
+                      <Pin Id="Bex8xN6xwX8NZ0fnCBvWf6" Name="Thread Group Count Global" Kind="InputPin" />
                       <Pin Id="K3zIjqKnynsPGkF9X41Ef8" Name="Cnt" Kind="InputPin" />
                       <Pin Id="Q06PBOZVqsRLO0iKeGPWun" Name="Enabled" Kind="InputPin" />
                       <Pin Id="NJ10y7NVhScN0CuWVou2oz" Name="Output" Kind="OutputPin" />
