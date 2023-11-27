@@ -670,7 +670,7 @@
             <Pin Id="BeLpSozJT2CL9RL4E8BIkJ" Name="Enabled" Kind="InputPin" />
             <Pin Id="BpGOTgPA1HML5DTKaRaVPE" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="864,578,45,19" Id="BGMT9jsuMOIOgTRFoEAcYn">
+          <Node Bounds="864,578,39,19" Id="BGMT9jsuMOIOgTRFoEAcYn">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />

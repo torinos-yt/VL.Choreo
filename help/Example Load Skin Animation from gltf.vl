@@ -26,7 +26,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="Boo2NZEfLCyON2f1bvrsrr" Name="Bounds" Kind="InputPin" DefaultValue="1374, 117, 786, 432" />
+            <Pin Id="Boo2NZEfLCyON2f1bvrsrr" Name="Bounds" Kind="InputPin" DefaultValue="1014, 93, 786, 432" />
             <Pin Id="FQrtnrHugQALyQKKN1o9xD" Name="Input" Kind="InputPin" />
             <Pin Id="VXr96HCFCt6OMjHAYftXnC" Name="Camera" Kind="InputPin" />
             <Pin Id="UY4yyxHDat6Offl2QiKnVb" Name="Enable Default Camera" Kind="InputPin" />
@@ -289,6 +289,7 @@
             </p:NodeReference>
             <Pin Id="K5B6HLYLOOrPCBSjcuXX5r" Name="SkinnedMesh" Kind="InputPin" />
             <Pin Id="P1PlZd3ZlQKMqZC1ZoyE0a" Name="Skeleton" Kind="InputPin" />
+            <Pin Id="JMZWzH5zUQ4QZ4gx9QlTi9" Name="Bounding Box" Kind="InputPin" />
             <Pin Id="AQefPqwha1VQZD9Oe1Femv" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="441,1053,63,26" Id="E18uXTUZuLSNDAbPxoaZs6">
@@ -987,6 +988,7 @@
             </p:NodeReference>
             <Pin Id="Ot8x9xXcT00PlsnXnMYqlp" Name="SkinnedMesh" Kind="InputPin" />
             <Pin Id="UQeg2hIHXmOPHP3JUC5twS" Name="Skeleton" Kind="InputPin" />
+            <Pin Id="Azyxs9aUpLYLxIREtg1raG" Name="Bounding Box" Kind="InputPin" />
             <Pin Id="Vzht1TGJlNcPIOKtjzvXjO" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="-534,882,63,26" Id="H5aAQbhGnhxNoUIoG0ZEbv">
