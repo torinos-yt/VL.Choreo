@@ -3495,7 +3495,7 @@
             <Pin Id="UzuzyYNPuAzNTkcHzJbpno" Name="Bones" Kind="OutputPin" />
           </Patch>
           <Patch Id="AyfIbBAf98mN7JNYCOx0NQ" Name="RestPose" />
-          <Patch Id="Ns3rSJl6lFdP75YtrQ5SGB" Name="RestPoseBuffer (Internal)">
+          <Patch Id="Ns3rSJl6lFdP75YtrQ5SGB" Name="RestPoseBuffer">
             <Pin Id="Spj7hPciZFbQWniITbsHh8" Name="RestPose" Kind="OutputPin" />
           </Patch>
           <Patch Id="BnNJSSEuYJxMsY6a24ZXbG" Name="Name">
